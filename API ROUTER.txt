@@ -1,0 +1,63 @@
+### USER ###
+[/] POST user/register
+    request
+        - email
+        - password
+        - firstname
+        - lastname
+[*] POST user/google-register (ต้องลองเทสใน เว็ป)
+    request
+        - uid (google auth)
+        - email
+        - password
+        - firstname
+        - lastname
+[/] POST user/login
+    request
+        - email
+        - password
+[/] GET user/:id
+[/] GET user/find?keyword=keyword
+[/] PUT user/:id
+    request
+        - token
+        - firstname 
+        - lastname 
+        - phone 
+        - address 
+        - userImg
+[/] DELETE user/:id
+
+### RESTAURANT ###
+[/] POST restaurant/register
+    request
+        - email     
+        - password     
+        - firstname   
+        - lastname   
+        - restaurantName    
+        - detail    
+        - phone    
+        - address    
+        - type   
+[/] PUT restaurant/:id
+    request
+        - token
+        - address
+        - phone
+        - email
+        - type
+        - detail
+        - restaurantName   
+[/] GET restaurant          
+[/] GET restaurant/:id
+[/] DELETE restaurant/:id
+[/] GET restaurant/find?keyword=keyword
+
+### HOTEL ###
+[] POST hotel/add (admin)
+[] GET hotel
+[] GET hotel/:id
+[] POST hotel/comment/add
+[] GET hotel/comment/:hotalId
+[] GET hotel/comment/:hotalId/:commentId
