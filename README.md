@@ -4,7 +4,9 @@
 
 ```
   git clone https://github.com/algnot/backend-chom-phon.git
+  cd backend-chom-phon
   npm install
+  npm run dev
 ```
 
 ### Access to postman documantation
